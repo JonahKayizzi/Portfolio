@@ -33,17 +33,22 @@ ul {
   flex-basis: 10vh;
 }
 
-.portfolio-header h1 {
+.portfolio-header a {
   font-family: 'Inter', Verdana, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
   color: #28352f;
+  text-decoration: none;
+}
+
+.portfolio-header a:hover {
+  color: #1ea566;
 }
 
 .welcome {
-  margin: 4em 0;
+  padding: 3em 0;
   flex-direction: column;
 }
 
@@ -78,9 +83,13 @@ ul {
 }
 
 .social-media-links li {
-  flex-basis: 12%;
+  flex-basis: 11%;
 }
 
-.social-media-links i {
-  font-size: 20px;
+.social-media {
+  height: 200px;
+}
+
+.social {
+  width: 15px;
 }
