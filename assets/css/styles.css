@@ -1,0 +1,86 @@
+body,
+.portfolio-header,
+.welcome,
+.social-media-links,
+.intro-wrapper,
+.greeting-intro {
+  display: flex;
+}
+
+body {
+  background-color: #fff;
+  flex-direction: column;
+}
+
+.intro-wrapper {
+  background: url("../../assets/img/header-bg.png") 0 0 no-repeat;
+  background-size: 100%;
+  text-align: center;
+  flex-direction: column;
+}
+
+body > * {
+  flex: 1 1 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.portfolio-header {
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 10vh;
+}
+
+.portfolio-header h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #28352f;
+}
+
+.welcome {
+  margin: 4em 0;
+  flex-direction: column;
+}
+
+.greeting {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.intro {
+  color: #1ea566;
+}
+
+.greeting-intro {
+  flex-direction: column;
+}
+
+.welcome p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #172b4d;
+}
+
+.social-media-links {
+  justify-content: center;
+}
+
+.social-media-links li {
+  flex-basis: 12%;
+}
+
+.social-media-links i {
+  font-size: 100%;
+}
