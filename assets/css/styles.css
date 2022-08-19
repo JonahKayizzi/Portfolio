@@ -34,7 +34,7 @@ ul {
 }
 
 .portfolio-header h1 {
-  font-family: 'Inter';
+  font-family: 'Inter', Verdana, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -48,7 +48,7 @@ ul {
 }
 
 .greeting {
-  font-family: 'Inter';
+  font-family: 'Inter', Verdana, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -65,7 +65,7 @@ ul {
 }
 
 .welcome p {
-  font-family: 'Inter';
+  font-family: 'Inter', Verdana, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -82,5 +82,5 @@ ul {
 }
 
 .social-media-links i {
-  font-size: 100%;
+  font-size: 20px;
 }
