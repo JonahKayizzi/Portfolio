@@ -3,13 +3,19 @@ body,
 .welcome,
 .social-media-links,
 .intro-wrapper,
-.greeting-intro {
+.greeting-intro,
+.about-header,
+.works-card,
+.skill-wrap {
   display: flex;
 }
 
 body {
   background-color: #fff;
   flex-direction: column;
+  text-align: center;
+  font-family: 'Inter', Verdana, sans-serif;
+  font-style: normal;
 }
 
 .intro-wrapper {
@@ -34,8 +40,6 @@ ul {
 }
 
 .portfolio-header a {
-  font-family: 'Inter', Verdana, sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
@@ -48,13 +52,11 @@ ul {
 }
 
 .welcome {
-  padding: 3em 0;
+  padding: 1em 0;
   flex-direction: column;
 }
 
-.greeting {
-  font-family: 'Inter', Verdana, sans-serif;
-  font-style: normal;
+.home-headings {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -67,15 +69,15 @@ ul {
 
 .greeting-intro {
   flex-direction: column;
+  margin: 2em 0 0.5em;
 }
 
-.welcome p {
-  font-family: 'Inter', Verdana, sans-serif;
-  font-style: normal;
+.banner-message {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   color: #172b4d;
+  margin: 0 0 1px 0;
 }
 
 .social-media-links {
@@ -88,4 +90,136 @@ ul {
 
 .social {
   width: 15px;
+}
+
+.recent-works-title {
+  background: url("../../assets/img/Indicator.png") 0 0 no-repeat;
+  background-position: bottom center;
+}
+
+.scroll-down {
+  background-color: rgba(0, 0, 0, 0);
+  border-style: hidden;
+  margin: 3em 0 0;
+}
+
+.disabled-button:hover {
+  background-color: #1e488f;
+}
+
+.works-wrapper {
+  display: grid;
+  grid-template-rows: 474px 474px 474px 474px 474px 474px;
+  gap: 2em;
+  margin: 3em 0 1em 0;
+}
+
+.works-card {
+  background: url("../../assets/img/working-holder.png") 0 0 no-repeat;
+  background-size: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 8px;
+  border: 1px solid #d0d9d7;
+}
+
+.skill-wrap {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  width: 100%;
+}
+
+.works-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #3a4a42;
+  margin: 0;
+}
+
+.work-skill {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+  background-color: #ebf0ee;
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+.works-card-inner {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 16px 0;
+  width: 100%;
+  align-items: center;
+}
+
+.home-btn {
+  border-radius: 4px;
+  width: 40%;
+  background: #36b37f;
+  height: 48px;
+  color: #fff;
+  border: 0;
+  margin: 1em 0;
+}
+
+.home-btn:hover {
+  background: #1e488f;
+  color: #fff;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.about-header {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../../assets/img/about-me-1.png") 0 100% no-repeat, url("../../assets/img/Mask-Group.png") 100% 0 no-repeat;
+}
+
+.about-cards {
+  width: 90%;
+  border: 1px solid #d0d9d7;
+  border-radius: 8px;
+  background: #ebf0ee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 0;
+}
+
+.about-card-item {
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 16px;
+  color: #36b37e;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 0.3em;
+}
+
+.about-card-list {
+  width: 100%;
+  justify-content: center;
+}
+
+.about-card-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #344563;
+  margin: 0.3em;
 }
