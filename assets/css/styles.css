@@ -115,12 +115,35 @@ ul {
 }
 
 .works-card {
-  background: url("../../assets/img/working-holder.png") 0 0 no-repeat;
   background-size: 100%;
   flex-direction: column;
   justify-content: flex-end;
   border-radius: 8px;
   border: 1px solid #d0d9d7;
+}
+
+.project1 {
+  background: url("../../assets/img/1.png") 0 0 no-repeat;
+}
+
+.project2 {
+  background: url("../../assets/img/2.png") 0 0 no-repeat;
+}
+
+.project3 {
+  background: url("../../assets/img/3.png") 0 0 no-repeat;
+}
+
+.project4 {
+  background: url("../../assets/img/4.png") 0 0 no-repeat;
+}
+
+.project5 {
+  background: url("../../assets/img/5.png") 0 0 no-repeat;
+}
+
+.project6 {
+  background: url("../../assets/img/6.png") 0 0 no-repeat;
 }
 
 .skill-wrap {
