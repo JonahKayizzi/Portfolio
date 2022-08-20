@@ -204,7 +204,7 @@ ul {
 }
 
 .about-header {
-  margin-bottom: 1em;
+  margin: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
