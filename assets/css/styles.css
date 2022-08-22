@@ -146,10 +146,9 @@ ul {
 }
 
 .skill-wrap {
-  flex-wrap: wrap;
-  justify-content: space-around;
   padding: 0;
   width: 100%;
+  display: block;
 }
 
 .works-title {
@@ -244,8 +243,4 @@ ul {
   line-height: 32px;
   color: #344563;
   margin: 0.3em;
-}
-
-.skill-wrap {
-  display: float;
 }
