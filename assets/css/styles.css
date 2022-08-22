@@ -5,7 +5,7 @@ body,
 .intro-wrapper,
 .greeting-intro,
 .about-header,
-.works-card, {
+.works-card {
   display: flex;
 }
 
@@ -22,7 +22,9 @@ body {
   background-size: 100%;
   text-align: center;
   flex-direction: column;
+  ;
 }
+
 
 body > * {
   flex: 1 1 auto;
@@ -149,6 +151,7 @@ ul {
   padding: 0;
   width: 100%;
   display: block;
+  
 }
 
 .works-title {
@@ -166,7 +169,7 @@ ul {
   color: #3a4a42;
   background-color: #ebf0ee;
   border-radius: 4px;
-  padding: 8px 12px;
+  padding: 8px 12px;  
 }
 
 .works-card-inner {
@@ -230,6 +233,7 @@ ul {
   border-radius: 8px;
   padding: 12px;
   margin: 0.3em;
+  float: left;
 }
 
 .about-card-list {
