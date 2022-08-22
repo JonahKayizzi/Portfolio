@@ -5,8 +5,7 @@ body,
 .intro-wrapper,
 .greeting-intro,
 .about-header,
-.works-card,
-.skill-wrap {
+.works-card, {
   display: flex;
 }
 
@@ -245,4 +244,8 @@ ul {
   line-height: 32px;
   color: #344563;
   margin: 0.3em;
+}
+
+.skill-wrap {
+  display: float;
 }
