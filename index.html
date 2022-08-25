@@ -11,16 +11,17 @@
 </head>
 <body>
     <header class="portfolio-header">
-        <a href="#" >Jon D-ev</a>
+        <a class="logo" href="#" >Jon D-ev</a>
         <nav>
-            <ul>
-                <li>
-                    <img src="assets/img/Union.png" alt="menu icon">
-                </li>
+            <ul class="menu">
+                <li class="hambuger"><img src="assets/img/Union.png" alt="menu icon"></li>
+                <li class="menu-item"><a href="#welcome-section">Portfolio</a></li>
+                <li class="menu-item"><a href="#about-section">About</a></li>
+                <li class="menu-item"><a href="#contact-section">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section class="intro-wrapper">
+    <section class="intro-wrapper" id="welcome-section">
         <div class="welcome">
             <h1 class="greeting-intro">
                 <span class="home-headings greeting">Hey there. I'm Jonathan</span>
@@ -29,20 +30,18 @@
             <p class="banner-message">I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestitate to contact me</p>
         </div>
         <ul class="social-media-links">
-            <li><a href="#"><img class="social" src="assets/img/twitter.png" alt="twitter"/></a></li>
-            <li><a href="#"><img class="social" src="assets/img/Linkedin-icon.png" alt="linkedin"/></a></li>
-            <li><a href="#"><img class="social" src="assets/img/medium.png" alt="medium"/></a></li>
             <li><a href="#"><img class="social" src="assets/img/github.png" alt="github"/></a></li>
+            <li><a href="#"><img class="social" src="assets/img/Linkedin-icon.png" alt="linkedin"/></a></li>
             <li><a href="#"><img class="social" src="assets/img/angellist.png" alt="angellist"/></a></li>
+            <li><a href="#"><img class="social" src="assets/img/twitter.png" alt="twitter"/></a></li>
+            <li><a href="#"><img class="social" src="assets/img/medium.png" alt="medium"/></a></li>
         </ul>
         <button class="scroll-down" type="button">
             <img class="disabled-button" src="assets/img/Disabled.png" alt="disabled-button">
         </button>
     </section>
-    <section class="recent-works-title">
+    <section class="works-wrapper" id="works-section">
         <h2 class="home-headings works-heading">My Recent Works</h2>
-    </section>
-    <section class="works-wrapper">
         <div class="works-card project1">
             <div class="works-card-inner">
                 <h4 class="works-title">Multi-Post Stories Gain + Glory</h4>
@@ -116,10 +115,10 @@
             </div>
         </div>
     </section>
-    <section class="about-wrapper">
+    <section class="about-wrapper" id="about-section">
         <div class="about-header">
             <h2 class="home-headings about-title">About me</h2>
-            <p class="banner-message">I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestitate to contact me</p>
+            <p class="banner-message about-message">I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestitate to contact me</p>
             <button class="home-btn resume-button" type="button">Get My Resume</button>
         </div>
         <div class="about-cards">
@@ -155,26 +154,28 @@
             </ul>
         </div>
     </section>
-    <section class="contact-section">
-        <div class="contact-heading">
-            <h2 class="home-headings contact-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+    <section class="contact-section" id="contact-section">
+        <div class="contact-wrapper">
+            <div class="contact-heading">
+                <h2 class="home-headings contact-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+            </div>
+            <form action="https://formspree.io/f/xvoygkpa" class="contact-form" method="post">
+                <input type="text" name="name" id="name" maxlength="30" placeholder="Full name" required>
+                <input type="email" name="email" id="email" placeholder="Email address" required>
+                <textarea name="message" id="message" cols="30" rows="4" maxlength="500" placeholder="Enter text here" required></textarea>
+                <button class="home-btn contact-button" type="submit">Get in touch</button>
+            </form>
         </div>
-        <form action="https://formspree.io/f/xvoygkpa" class="contact-form" method="post">
-            <input type="text" name="name" id="name" maxlength="30" placeholder="Full name" required>
-            <input type="email" name="email" id="email" placeholder="Email address" required>
-            <textarea name="message" id="message" cols="30" rows="4" maxlength="500" placeholder="Enter text here" required></textarea>
-            <button class="home-btn contact-button" type="submit">Get in touch</button>
-        </form>
-        <ul class="social-media-links">
-            <li><a href="#"><img class="social" src="assets/img/twitter.png" alt="twitter"/></a></li>
-            <li><a href="#"><img class="social" src="assets/img/Linkedin-icon.png" alt="linkedin"/></a></li>
-            <li><a href="#"><img class="social" src="assets/img/medium.png" alt="medium"/></a></li>
-            <li><a href="#"><img class="social" src="assets/img/github.png" alt="github"/></a></li>
-            <li><a href="#"><img class="social" src="assets/img/angellist.png" alt="angellist"/></a></li>
-        </ul>
     </section>
     <footer class="footer">
         <div class="footer-wrapper">
+            <ul class="social-media-links">
+                <li><a href="#"><img class="social" src="assets/img/github.png" alt="github"/></a></li>
+                <li><a href="#"><img class="social" src="assets/img/Linkedin-icon.png" alt="linkedin"/></a></li>
+                <li><a href="#"><img class="social" src="assets/img/angellist.png" alt="angellist"/></a></li>
+                <li><a href="#"><img class="social" src="assets/img/twitter.png" alt="twitter"/></a></li>
+                <li><a href="#"><img class="social" src="assets/img/medium.png" alt="medium"/></a></li>
+            </ul>
             <p class="banner-message my-email">jonahkayizzi@gmail.com</p>
         </div>
     </footer>
