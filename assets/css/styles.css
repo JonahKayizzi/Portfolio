@@ -7,7 +7,7 @@ body,
 .about-header,
 .works-card,
 .skill-wrap,
-.contact-section,
+.contact-wrapper,
 .contact-form {
   display: flex;
 }
@@ -26,6 +26,7 @@ body {
   background-size: 100%;
   text-align: center;
   flex-direction: column;
+  padding-bottom: 0;
 }
 
 body > * {
@@ -40,14 +41,29 @@ ul {
   justify-content: space-between;
   align-items: center;
   flex-basis: 10vh;
+  width: 90%;
 }
 
-.portfolio-header a {
+a {
+  color: #28352f;
+  text-decoration: none;
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
-  color: #28352f;
-  text-decoration: none;
+}
+
+a:hover {
+  color: #1ea566;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-item {
+  display: none;
+  margin: 0 1em;
 }
 
 .portfolio-header a:hover {
@@ -55,8 +71,9 @@ ul {
 }
 
 .welcome {
-  padding: 1em 0;
+  margin: 2em 0 1em;
   flex-direction: column;
+  align-items: center;
 }
 
 .home-headings {
@@ -65,6 +82,8 @@ ul {
   line-height: 52px;
   color: #172b4d;
   width: 90%;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .intro {
@@ -73,7 +92,8 @@ ul {
 
 .greeting-intro {
   flex-direction: column;
-  margin: 2em 0 0.5em;
+  align-items: center;
+  width: 100%;
 }
 
 .banner-message {
@@ -94,12 +114,15 @@ ul {
 }
 
 .social {
-  width: 15px;
+  width: 20px;
 }
 
-.recent-works-title {
+.works-heading {
   background: url("../../assets/img/Indicator.png") 0 0 no-repeat;
   background-position: bottom center;
+  width: 90%;
+  padding: 0 0 1em;
+  margin: 0 auto 1em;
 }
 
 .scroll-down {
@@ -114,7 +137,7 @@ ul {
 
 .works-wrapper {
   display: grid;
-  grid-template-rows: 474px 474px 474px 474px 474px 474px;
+  grid-template-rows: auto 474px 474px 474px 474px 474px;
   gap: 2em;
   margin: 3em 0 1em 0;
 }
@@ -161,6 +184,7 @@ ul {
 .works-title {
   font-weight: 600;
   font-size: 24px;
+  font-family: 'Poppins', Verdana, sans-serif;
   line-height: 32px;
   color: #3a4a42;
   margin: 0;
@@ -174,6 +198,8 @@ ul {
   background-color: #ebf0ee;
   border-radius: 4px;
   padding: 8px 12px;
+  flex-grow: 1;
+  margin: 0 0.4em;
 }
 
 .works-card-inner {
@@ -215,11 +241,22 @@ ul {
 }
 
 .about-header {
-  margin: 1em;
+  margin: 0.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: url("../../assets/img/about-me-1.png") 0 100% no-repeat, url("../../assets/img/Mask-Group.png") 100% 0 no-repeat;
+}
+
+.about-title {
+  padding: 1.5em 0 0.5em;
+}
+
+.about-message {
+  line-height: 32px;
+  color: #42526e;
+  vertical-align: top;
+  margin: 0;
 }
 
 .about-cards {
@@ -259,9 +296,19 @@ ul {
 }
 
 .contact-section {
+  background: url("../../assets/img/contact-bg.png") 100% 100% no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-wrapper {
   flex-direction: column;
   width: 90%;
-  background: url("../../assets/img/contact-bg.png") 100% 100% no-repeat;
+}
+
+.contact-title {
+  margin: 1em 0;
 }
 
 .contact-form {
@@ -296,4 +343,128 @@ textarea {
 .footer-wrapper {
   min-height: 20em;
   margin: 0.5em;
+}
+
+.footer {
+  width: 100%;
+}
+
+@media screen and (min-device-width: 768px) {
+  .intro-wrapper {
+    background: none;
+    background-size: 100%;
+    padding-bottom: 30em;
+  }
+
+  .logo,
+  .hambuger,
+  .my-email {
+    display: none;
+  }
+
+  .portfolio-header {
+    justify-content: center;
+  }
+
+  .menu-item {
+    display: block;
+  }
+
+  .home-headings {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .welcome {
+    margin: 12em 0 1em;
+  }
+
+  .banner-message {
+    width: 54%;
+    line-height: 32px;
+  }
+
+  .social-media-links li {
+    flex-basis: 3%;
+  }
+
+  .works-title {
+    width: 60%;
+  }
+
+  .works-wrapper {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto 474px 474px;
+  }
+
+  .works-heading {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .about-wrapper {
+    margin: 2em auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: unset;
+  }
+
+  .about-header {
+    width: 100%;
+  }
+
+  .about-title {
+    font-size: 48px;
+    line-height: 52px;
+  }
+
+  .about-cards {
+    width: 25%;
+  }
+
+  .contact-section {
+    background: url("../../assets/img/contact-bg-1.png") 100% 100% no-repeat, url("../../assets/img/contact-bg-2.png") 0 100% no-repeat, url("../../assets/img/contact-bg-3.png") 20% 100% no-repeat;
+    border-bottom: 1px solid #dfe1e6;
+  }
+
+  .contact-wrapper {
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10em;
+  }
+
+  .contact-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 52px;
+    margin: 3em 0;
+    width: 95%;
+  }
+
+  .contact-heading {
+    width: 45%;
+  }
+
+  .contact-form {
+    width: 55%;
+  }
+
+  .contact-button {
+    align-self: flex-start;
+  }
+
+  .social-media-links {
+    width: 100%;
+  }
+
+  body {
+    background: url("../../assets/img/header-bg-wide.png") 0 0 no-repeat;
+    background-size: 100%;
+  }
 }
