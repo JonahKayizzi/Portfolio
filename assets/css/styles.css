@@ -174,6 +174,25 @@ a:hover {
   background: url("../../assets/img/6.png") 0 0 no-repeat;
 }
 
+.project1,
+.project2,
+.project3,
+.project4,
+.project5,
+.project6 {
+  background-size: 100%;
+  transition: all 1s ease-out;
+}
+
+.project1:hover,
+.project2:hover,
+.project3:hover,
+.project4:hover,
+.project5:hover,
+.project6:hover {
+  background-size: 120%;
+}
+
 .skill-wrap {
   flex-wrap: wrap;
   justify-content: space-around;
@@ -326,6 +345,7 @@ textarea {
   font-weight: 400;
   line-height: 24px;
   border-radius: 4px;
+  transition: all 0.5s ease-out;
 }
 
 input {
@@ -340,6 +360,12 @@ textarea {
   padding: 12px;
 }
 
+input:hover,
+textarea:hover {
+  padding-left: 2em;
+  width: calc(100% - 3em);
+}
+
 .footer-wrapper {
   min-height: 20em;
   margin: 0.5em;
@@ -347,6 +373,24 @@ textarea {
 
 .footer {
   width: 100%;
+}
+
+button {
+  transition: all 0.5s ease-in-out;
+}
+
+.logo {
+  animation: 2s ease-out rotate;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (min-device-width: 768px) {
