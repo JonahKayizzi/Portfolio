@@ -345,6 +345,7 @@ textarea {
   font-weight: 400;
   line-height: 24px;
   border-radius: 4px;
+  transition: all 0.5s ease-out;
 }
 
 input {
@@ -357,6 +358,12 @@ textarea {
   border: 1px solid #60c095;
   background: url("../../assets/img/textarea-icon.png") 100% 100% no-repeat;
   padding: 12px;
+}
+
+input:hover,
+textarea:hover {
+  padding-left: 2em;
+  width: calc(100% - 3em);
 }
 
 .footer-wrapper {
