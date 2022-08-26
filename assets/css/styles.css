@@ -372,6 +372,22 @@ button {
   transition: all 0.5s ease-in-out;
 }
 
+.logo {
+  animation: 2s ease-out rotate;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
 @media screen and (min-device-width: 768px) {
   .intro-wrapper {
     background: none;
