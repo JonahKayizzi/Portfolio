@@ -19,6 +19,7 @@ body {
   font-family: 'Inter', Verdana, sans-serif;
   font-style: normal;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .intro-wrapper {
