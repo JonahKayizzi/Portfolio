@@ -12,13 +12,18 @@ body,
   display: flex;
 }
 
+label {
+  display: hidden;
+}
+
 body {
   background-color: #fff;
   flex-direction: column;
   text-align: center;
-  font-family: 'Inter', Verdana, sans-serif;
+  font-family: "Inter", Verdana, sans-serif;
   font-style: normal;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .intro-wrapper {
@@ -203,7 +208,7 @@ a:hover {
 .works-title {
   font-weight: 600;
   font-size: 24px;
-  font-family: 'Poppins', Verdana, sans-serif;
+  font-family: "Poppins", Verdana, sans-serif;
   line-height: 32px;
   color: #3a4a42;
   margin: 0;
@@ -234,12 +239,12 @@ a:hover {
 .home-btn {
   border-radius: 4px;
   width: auto;
-  background: #36b37f;
+  background: #146e44;
   height: 48px;
   color: #fff;
   border: 0;
   margin: 1em 0;
-  font-family: 'Inter', Verdana, sans-serif;
+  font-family: "Inter", Verdana, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -294,7 +299,7 @@ a:hover {
   letter-spacing: 0.03em;
   font-size: 12px;
   line-height: 16px;
-  color: #36b37e;
+  color: #146e44;
   background-color: #fff;
   border-radius: 8px;
   padding: 12px;
@@ -340,7 +345,7 @@ textarea {
   width: calc(100% - 2em);
   margin: 1em;
   color: #6b778c;
-  font-family: 'Inter', Verdana, sans-serif;
+  font-family: "Inter", Verdana, sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
