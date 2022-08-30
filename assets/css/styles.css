@@ -12,11 +12,15 @@ body,
   display: flex;
 }
 
+label {
+  display: hidden;
+}
+
 body {
   background-color: #fff;
   flex-direction: column;
   text-align: center;
-  font-family: 'Inter', Verdana, sans-serif;
+  font-family: "Inter", Verdana, sans-serif;
   font-style: normal;
   align-items: center;
   overflow-x: hidden;
@@ -204,7 +208,7 @@ a:hover {
 .works-title {
   font-weight: 600;
   font-size: 24px;
-  font-family: 'Poppins', Verdana, sans-serif;
+  font-family: "Poppins", Verdana, sans-serif;
   line-height: 32px;
   color: #3a4a42;
   margin: 0;
@@ -240,7 +244,7 @@ a:hover {
   color: #fff;
   border: 0;
   margin: 1em 0;
-  font-family: 'Inter', Verdana, sans-serif;
+  font-family: "Inter", Verdana, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -265,7 +269,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("../../assets/img/about-me-1.png") 0 100% no-repeat, url("../../assets/img/Mask-Group.png") 100% 0 no-repeat;
+  background: url("../../assets/img/about-me-1.png") 0 100% no-repeat,
+    url("../../assets/img/Mask-Group.png") 100% 0 no-repeat;
 }
 
 .about-title {
@@ -341,7 +346,7 @@ textarea {
   width: calc(100% - 2em);
   margin: 1em;
   color: #6b778c;
-  font-family: 'Inter', Verdana, sans-serif;
+  font-family: "Inter", Verdana, sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
@@ -472,7 +477,9 @@ button {
   }
 
   .contact-section {
-    background: url("../../assets/img/contact-bg-1.png") 100% 100% no-repeat, url("../../assets/img/contact-bg-2.png") 0 100% no-repeat, url("../../assets/img/contact-bg-3.png") 20% 100% no-repeat;
+    background: url("../../assets/img/contact-bg-1.png") 100% 100% no-repeat,
+      url("../../assets/img/contact-bg-2.png") 0 100% no-repeat,
+      url("../../assets/img/contact-bg-3.png") 20% 100% no-repeat;
     border-bottom: 1px solid #dfe1e6;
   }
 
