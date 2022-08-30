@@ -269,8 +269,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("../../assets/img/about-me-1.png") 0 100% no-repeat,
-    url("../../assets/img/Mask-Group.png") 100% 0 no-repeat;
+  background: url("../../assets/img/about-me-1.png") 0 100% no-repeat, url("../../assets/img/Mask-Group.png") 100% 0 no-repeat;
 }
 
 .about-title {
@@ -477,9 +476,7 @@ button {
   }
 
   .contact-section {
-    background: url("../../assets/img/contact-bg-1.png") 100% 100% no-repeat,
-      url("../../assets/img/contact-bg-2.png") 0 100% no-repeat,
-      url("../../assets/img/contact-bg-3.png") 20% 100% no-repeat;
+    background: url("../../assets/img/contact-bg-1.png") 100% 100% no-repeat, url("../../assets/img/contact-bg-2.png") 0 100% no-repeat, url("../../assets/img/contact-bg-3.png") 20% 100% no-repeat;
     border-bottom: 1px solid #dfe1e6;
   }
 
