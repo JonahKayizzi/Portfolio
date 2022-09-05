@@ -66,8 +66,12 @@ a:hover {
   justify-content: center;
 }
 
-.menu-item {
+.menu,
+.close {
   display: none;
+}
+
+.menu-item {
   margin: 0 1em;
 }
 
