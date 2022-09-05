@@ -20,3 +20,13 @@ closebutton.addEventListener('click', function () {
         logo.style.display = 'block'
     }
 })
+
+menu.addEventListener('click', function () {
+    if (menu.style.display = 'block') {
+        menu.style.display = 'none'
+        closebutton.style.display = 'none'
+        hambger.style.display = 'block'
+        logo.style.display = 'block'
+    }
+})
+
