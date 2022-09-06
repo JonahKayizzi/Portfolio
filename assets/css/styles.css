@@ -47,6 +47,7 @@ ul {
   align-items: center;
   flex-basis: 10vh;
   width: 90%;
+  position: relative;
 }
 
 a {
@@ -64,11 +65,30 @@ a:hover {
 .menu {
   display: flex;
   justify-content: center;
+  height: 100vh;
+}
+
+.menu a {
+  color: #3a4a42;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 .menu-item {
+  margin: 2em 0;
+  text-align: left;
+}
+
+.menu,
+.close {
   display: none;
-  margin: 0 1em;
+}
+
+.close,
+.hambuger {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .portfolio-header a:hover {
@@ -386,6 +406,9 @@ button {
 
 .logo {
   animation: 2s ease-out rotate;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @keyframes rotate {
@@ -399,6 +422,27 @@ button {
 }
 
 @media screen and (min-device-width: 768px) {
+  .menu {
+    display: flex;
+    height: auto;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .menu a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .menu-item {
+    margin: 0 1em;
+    display: block;
+  }
+
   .intro-wrapper {
     background: none;
     background-size: 100%;
@@ -413,10 +457,6 @@ button {
 
   .portfolio-header {
     justify-content: center;
-  }
-
-  .menu-item {
-    display: block;
   }
 
   .home-headings {

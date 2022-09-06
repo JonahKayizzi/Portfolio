@@ -6,7 +6,7 @@
 
 ## Built With
 
-- Major Languages : HTML and CSS
+- Major Languages : HTML, CSS and Javascript
 - Frameworks: None
 - Technologies used: VS Code, Flexbox
 
