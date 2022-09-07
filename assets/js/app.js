@@ -131,6 +131,31 @@ const createProjectsContainer = () => {
 }
 
 createProjectsContainer();
+
+const divCardPopup = createElementIdClass('div','works-card project1','project-card');
+    addHTMLAppendToParent('',popupWrapper, divCardPopup);
+    const divCardInnerPopup = createElementIdClass('div', 'works-card-inner','project-card-inner');
+    addHTMLAppendToParent('',divCardPopup, divCardInnerPopup);
+    const projectTitlePopup = createElementIdClass('h4','works-title','project-title');
+    addHTMLAppendToParent ('',divCardInnerPopup,projectTitlePopup);
+    const projectContentPopup = createElementIdClass('p','banner-message project-content','project-content');
+    addHTMLAppendToParent('',divCardInnerPopup,projectContentPopup);
+    const skillsWrapperPopup = createElementIdClass('ul','skill-wrap works-skills','skills-wrapper');
+    addHTMLAppendToParent('',divCardInnerPopup,skillsWrapperPopup);
+    const skillItem1Popup = createElementIdClass('li','skill-wrap works-skills','skill-item');
+    const skillItem2Popup = createElementIdClass('li','skill-wrap works-skills','skill-item');
+    const skillItem3Popup = createElementIdClass('li','skill-wrap works-skills','skill-item');
+    const skillItem4Popup = createElementIdClass('li','skill-wrap works-skills','skill-item');
+    addHTMLAppendToParent('',skillsWrapperPopup, skillItem1Popup);
+    addHTMLAppendToParent('',skillsWrapperPopup, skillItem2Popup);
+    addHTMLAppendToParent('',skillsWrapperPopup, skillItem3Popup);
+    addHTMLAppendToParent('',skillsWrapperPopup, skillItem4Popup);
+    const projectDetailsButtonPopup = createElementIdClass('button','home-btn work-detail-button','project-details-button');
+    addHTMLAppendToParent('See Project',divCardInnerPopup,projectDetailsButtonPopup);
+    const projectLiveButtonPopup = createElementIdClass('button', 'home-btn work-detail-button','project-live-button');
+    addHTMLAppendToParent('See Live',divCardInnerPopup,projectLiveButtonPopup); 
+    const closeProjectPopup = createElementIdClass('i','fa fa-times','close-project');
+    addHTMLAppendToParent('',divCardPopup ,closeProjectPopup);
     
 projects.forEach((i) => {
     const divCard = createElementIdClass('div','works-card project1','project-card');
