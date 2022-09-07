@@ -570,7 +570,17 @@ body{
   position: fixed;
   top: 0;
   left: 0;
-  width:100%;
+  width:90%;
   height: 100vh;
   border: solid;
+}
+
+#close-project{
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  background-color: #6b778c;
+  width: 30px;
+  height:40px;
+  text-align: center;
 }
