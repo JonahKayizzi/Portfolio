@@ -187,7 +187,17 @@ projects.forEach((i) => {
     projectTitle.innerHTML = `${projects[projects.indexOf(i)].title}`;
     projectContent.innerHTML = `${projects[projects.indexOf(i)].content}`;
                                                 
-
+    projectDetailsButton.addEventListener('click', () => {
+        skillItem1Popup.innerHTML = `${projects[projects.indexOf(i)].skills.skill1}`;
+        skillItem2Popup.innerHTML = `${projects[projects.indexOf(i)].skills.skill2}`;
+        skillItem3Popup.innerHTML = `${projects[projects.indexOf(i)].skills.skill3}`;
+        skillItem4Popup.innerHTML = `${projects[projects.indexOf(i)].skills.skill4}`;
+        divCardPopup.style.backgroundImage = `${projects[projects.indexOf(i)].backgroundImg}`;
+        projectTitlePopup.innerHTML = `${projects[projects.indexOf(i)].title}`;
+        projectContentPopup.innerHTML = `${projects[projects.indexOf(i)].content}`;
+        popupWrapper.style.display = 'block';
+        projectsWrapper.style.display = 'none';
+    });
 
 });
 
