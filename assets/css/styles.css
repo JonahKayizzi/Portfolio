@@ -421,6 +421,10 @@ button {
   }
 }
 
+#pop-section {
+  display: none;
+}
+
 @media screen and (min-device-width: 768px) {
   .menu {
     display: flex;
