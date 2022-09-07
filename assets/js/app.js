@@ -196,9 +196,12 @@ projects.forEach((i) => {
         projectTitlePopup.innerHTML = `${projects[projects.indexOf(i)].title}`;
         projectContentPopup.innerHTML = `${projects[projects.indexOf(i)].content}`;
         popupWrapper.style.display = 'block';
-        projectsWrapper.style.display = 'none';
     });
 
 });
+
+closeProjectPopup.addEventListener('click', () =>{
+    popupWrapper.style.display = 'none';
+})
 
 
