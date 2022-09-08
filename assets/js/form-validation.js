@@ -24,3 +24,11 @@ fullname.addEventListener('input', () => {
     errorName.textContent = 'Full Name must be less than 30 characters';
   }
 });
+
+message.addEventListener('input', () => {
+    if (message.value.length > 10 && message.value.length < 500) {
+      errorMessage.textContent = '';
+    } else {
+      errorMessage.textContent = 'Messgae should be more than 10 and not exceed 500 characters';
+    }
+  });
