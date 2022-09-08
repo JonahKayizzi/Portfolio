@@ -1,3 +1,4 @@
+/* stylelint-disable selector-list-comma-newline-after */
 body,
 .portfolio-header,
 .welcome,
@@ -13,7 +14,7 @@ body,
 }
 
 label {
-  display: hidden;
+  display: none;
 }
 
 body {
@@ -684,4 +685,11 @@ button {
     top: 3em;
     right: 2em;
   }
+}
+
+#errorEmail, #error, #errorName, #errorMessage {
+  color: red;
+  background-color: rgba(255, 0, 0, 0.4);
+  padding: 0.3em;
+  border-radius: 4px;
 }
