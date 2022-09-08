@@ -1,18 +1,26 @@
 const form = document.getElementById('contact');
-const name = document.getElementById('name');
+const fullname = document.getElementById('name');
 const email = document.getElementById('email');
 const message = document.getElementById('message');
 const error = document.getElementById('error');
 const errorEmail = document.getElementById('errorEmail');
+const errorName = document.getElementById('errorName');
+const errorMessage = document.getElementById('errorMessage');
 
 const emailRegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 email.addEventListener('input', () => {
-    const isValid = emailRegExp.test(email.value) && email.value === email.value.toLowerCase();
+  if (email.value === email.value.toLowerCase()) {
+    errorEmail.textContent = '';
+  } else {
+    errorEmail.textContent = 'Email cannot have capital letters';
+  }
+});
 
-    if(isValid){
-        errorEmail.textContent ='';
-    }else{
-        errorEmail.textContent = 'Email cannot have capital letters';
-    }
+fullname.addEventListener('input', () => {
+  if (fullname.value.length < 30) {
+    errorName.textContent = '';
+  } else {
+    errorName.textContent = 'Full Name must be less than 30 characters';
+  }
 });
