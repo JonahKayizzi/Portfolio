@@ -26,20 +26,20 @@ fullname.addEventListener('input', () => {
 });
 
 message.addEventListener('input', () => {
-    if (message.value.length > 10 && message.value.length < 500) {
-      errorMessage.textContent = '';
-    } else {
-      errorMessage.textContent = 'Messgae should be more than 10 and not exceed 500 characters';
-    }
-  });
+  if (message.value.length > 10 && message.value.length < 500) {
+    errorMessage.textContent = '';
+  } else {
+    errorMessage.textContent = 'Messgae should be more than 10 and not exceed 500 characters';
+  }
+});
 
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    if (!((emailRegExp.test(email.value))
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (!((emailRegExp.test(email.value))
     && (message.value.length > 10 && message.value.length < 500)
      && (fullname.value.length < 30))) {
-      error.textContent = 'All fields need to be filled';
-    } else {
-      form.submit();
-    }
-  });
+    error.textContent = 'All fields need to be filled';
+  } else {
+    form.submit();
+  }
+});

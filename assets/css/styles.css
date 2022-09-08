@@ -689,4 +689,7 @@ button {
 
 #errorEmail, #error, #errorName, #errorMessage {
   color: red;
+  background-color: rgba(255, 0, 0, 0.4);
+  padding: 0.3em;
+  border-radius: 4px;
 }
