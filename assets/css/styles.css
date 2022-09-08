@@ -24,6 +24,7 @@ body {
   font-style: normal;
   align-items: center;
   overflow-x: hidden;
+  position: relative;
 }
 
 .intro-wrapper {
@@ -241,7 +242,7 @@ a:hover {
   color: #3a4a42;
   background-color: #ebf0ee;
   border-radius: 4px;
-  padding: 8px 12px;
+  padding: 0.4em 0.2em;
   flex-grow: 1;
   margin: 0 0.4em;
 }
@@ -555,5 +556,132 @@ button {
   body {
     background: url("../../assets/img/header-bg-wide.png") 0 0 no-repeat;
     background-size: 100%;
+  }
+}
+
+#pop-section {
+  position: fixed;
+  height: 100vh;
+  display: none;
+  border-radius: 8px;
+  width: 100%;
+  top: 0;
+  background: #fff;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pop-section .close-wrapper {
+  width: 94%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-top: 1em;
+}
+
+#pop-section .works-card {
+  height: 90%;
+  width: 94%;
+  margin: 1em 1em 3em;
+  border: unset;
+}
+
+#pop-section p {
+  font-size: 16px;
+  line-height: 30px;
+  width: 100%;
+  text-align: left;
+}
+
+#pop-section .title-container {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-content: space-between;
+}
+
+#pop-section h4 {
+  font-size: 32px;
+  line-height: 44px;
+  width: 100%;
+  color: #172b4d;
+  text-align: left;
+}
+
+#pop-section button {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.works-card-inner-pop {
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+  padding: 16px 0;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#pop-section .skill-wrap {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#pop-section .work-skill {
+  font-size: 12px;
+  line-height: 16px;
+  color: #344563;
+  flex-grow: unset;
+  padding: 0.4em 0.8em;
+}
+
+#close-project {
+  background-color: #ebecf0;
+  border-radius: 8px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button-container {
+  display: flex;
+  gap: 1em;
+}
+
+.bg-image {
+  height: 70%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: solid 1px #dfe1e6;
+  border-radius: 8px;
+}
+
+@media screen and (max-device-width: 768px) {
+  .button-container {
+    order: 4;
+    width: 100%;
+  }
+
+  #pop-section p {
+    line-height: 30px;
+  }
+
+  #pop-section button {
+    flex-grow: 1;
+  }
+
+  #pop-section .title-container {
+    width: 100%;
+  }
+
+  #close-project {
+    position: absolute;
+    top: 3em;
+    right: 2em;
   }
 }
