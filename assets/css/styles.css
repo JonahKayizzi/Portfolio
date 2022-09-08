@@ -13,7 +13,7 @@ body,
 }
 
 label {
-  display: hidden;
+  display: none;
 }
 
 body {
