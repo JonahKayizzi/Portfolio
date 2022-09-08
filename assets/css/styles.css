@@ -242,7 +242,7 @@ a:hover {
   color: #3a4a42;
   background-color: #ebf0ee;
   border-radius: 4px;
-  padding: 8px 12px;
+  padding: 0.4em 0.2em;
   flex-grow: 1;
   margin: 0 0.4em;
 }
@@ -583,6 +583,7 @@ button {
   height: 90%;
   width: 94%;
   margin: 1em 1em 3em;
+  border: unset;
 }
 
 #pop-section p {
@@ -633,6 +634,7 @@ button {
   line-height: 16px;
   color: #344563;
   flex-grow: unset;
+  padding: 0.4em 0.8em;
 }
 
 #close-project {
@@ -655,6 +657,8 @@ button {
   height: 70%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  border: solid 1px #dfe1e6;
+  border-radius: 8px;
 }
 
 @media screen and (max-device-width: 768px) {
