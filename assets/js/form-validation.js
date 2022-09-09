@@ -14,6 +14,7 @@ email.addEventListener('input', () => {
     errorEmail.textContent = '';
   } else {
     errorEmail.textContent = 'Email cannot have capital letters';
+    errorEmail.style.display = 'block';
   }
 });
 
@@ -22,6 +23,7 @@ fullname.addEventListener('input', () => {
     errorName.textContent = '';
   } else {
     errorName.textContent = 'Full Name must be less than 30 characters';
+    errorName.style.display = 'block';
   }
 });
 
@@ -30,6 +32,7 @@ message.addEventListener('input', () => {
     errorMessage.textContent = '';
   } else {
     errorMessage.textContent = 'Messgae should be more than 10 and not exceed 500 characters';
+    errorMessage.style.display = 'block';
   }
 });
 
@@ -39,6 +42,7 @@ form.addEventListener('submit', (event) => {
     && (message.value.length > 10 && message.value.length < 500)
      && (fullname.value.length < 30))) {
     error.textContent = 'All fields need to be filled';
+    error.style.display = 'block';
   } else {
     form.submit();
   }
