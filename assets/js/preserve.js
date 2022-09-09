@@ -19,3 +19,10 @@ const populateStorage = () => {
   localStorage.setItem('formInputed', JSON.stringify(formInputs));
   setForm();
 };
+
+if (!localStorage.getItem('formInputed')) {
+  populateStorage();
+} else {
+  setForm();
+}
+
