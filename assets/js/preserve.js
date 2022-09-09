@@ -26,3 +26,6 @@ if (!localStorage.getItem('formInputed')) {
   setForm();
 }
 
+nameInput.onchange = populateStorage;
+emailInput.onchange = populateStorage;
+messageInput.onchange = populateStorage;
